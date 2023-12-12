@@ -1,0 +1,17 @@
+{
+  "name": "icrc7_test",
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "test": "bash ./scripts/test.sh"
+  },
+  "dependencies": {
+    "@dfinity/agent": "^0.15.3",
+    "@dfinity/auth-client": "^0.15.3",
+    "@dfinity/candid": "^0.15.3",
+    "@dfinity/identity": "^0.15.3",
+    "@dfinity/ledger": "^0.0.11",
+    "@dfinity/principal": "^0.15.3",
+    "tape": "^5.6.4"
+  }
+}

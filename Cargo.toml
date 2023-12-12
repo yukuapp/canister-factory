@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "src/icrc7",
+    "src/factory",
+    "src/dip721",
+]

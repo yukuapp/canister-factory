@@ -1,0 +1,25 @@
+type Account = record { owner : principal; subaccount : opt vec nat8 };
+type CreateArg = record {
+  supply_cap : opt nat;
+  name : text;
+  description : opt text;
+  royalties : opt nat16;
+  image : opt vec nat8;
+  royalties_recipient : opt Account;
+  symbol : text;
+  wasm_name : text;
+};
+type MintArgs = record {
+  id : nat;
+  to : Account;
+  name : text;
+  canister_id : text;
+  description : opt text;
+  image : text;
+  canister_name : text;
+};
+type MintResponse = variant { ok : nat; err : text; other : text };
+service : {
+  create_collection : (CreateArg) -> (principal);
+  mint_proxy : (MintArgs) -> (MintResponse);
+}

@@ -1,0 +1,1 @@
+dfx canister --network ic call factory mint_proxy '(record {id=10; to=record {owner=principal "kkwoi-3jebw-6qx6z-yeah7-pgtlm-gbqdm-kkvyt-eqgbl-x3vpw-wfu2w-rqe"; }; name="shiku"; canister_id="6222m-vqaaa-aaaah-adova-cai"; image="www.baicu.com"; canister_name="icrc7"; })'
